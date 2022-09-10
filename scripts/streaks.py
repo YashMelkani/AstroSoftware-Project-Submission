@@ -28,7 +28,6 @@ def find_streak(path, percentile_thresh = 0.05):
     #check for verticle streaks
     vmeans = np.mean(img, axis = 0)
     vidxs = np.where(vmeans<percentile_val)
-    print(vmeans[434], percentile_val)
     
     #check for horizontal streaks
     hmeans = np.mean(img, axis = 1)
